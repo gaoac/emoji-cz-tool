@@ -1,4 +1,5 @@
 # emoji-cz-tool
+
 emoji-cz配置文件
 
 >关于Git Commit message 的写法规社区有多种，本文采用的的Angular 规范是目前使用最广的写法，比较合理和系统化，并且有配套的工具。
@@ -24,7 +25,8 @@ npm install -g emoji-cz
 echo '{ "path": "emoji-cz" }' > ~/.czrc
 ```
 #### 配置
-在项目根目录创建`.cz.json`文件，按照“emoji-cz”官方例子修改内容：
+
+在项目根目录创建`.cz.json`文件，按照“emoji-cz”官方例子修改内容：
 
 ```
 {
