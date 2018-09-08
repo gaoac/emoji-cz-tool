@@ -26,7 +26,7 @@ echo '{ "path": "emoji-cz" }' > ~/.czrc
 ```
 #### 配置
 
-在项目根目录创建`.cz.json`文件，按照“emoji-cz”官方例子修改内容(本仓库中`.cz.json`文件已按照gitmoji补全，可直接使用)：
+在项目根目录创建`.cz.json`文件，按照“emoji-cz”官方例子修改内容(本仓库中`.cz.json`文件已按照gitmoji补全，可直接使用)：
 
 ```
 {
