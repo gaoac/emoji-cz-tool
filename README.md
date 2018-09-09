@@ -21,15 +21,15 @@ npm install -g emoji-cz
 # OR
 # yarn global add emoji-cz
 
-# set as default adapter globally(全局配置，详细配置见下文)
+# set as default adapter globally(全局配置，详细配置见下文)
 echo '{ "path": "emoji-cz" }' > ~/.czrc
 ```
 #### 配置
 
-按照“emoji-cz”官方例子内容：
+emoji-cz官方例子内容：
 ```
 {
-  "path": "emoji-cz",  // 指定cz使用的log工具
+  "path": "emoji-cz",  // 指定commitizen使用的adapter
   "emoji-cz": {
       // Overwrite types prompted to the command line.
       "types": {
@@ -57,7 +57,7 @@ echo '{ "path": "emoji-cz" }' > ~/.czrc
 
 ```
 
-(本仓库中`.cz.json`文件已按照gitmoji补全，可直接使用。
+(本仓库中`.cz.json`文件已按照gitmoji补全，可直接使用)
 
 ##### 全局配置 
 
