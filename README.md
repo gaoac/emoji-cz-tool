@@ -21,13 +21,12 @@ npm install -g emoji-cz
 # OR
 # yarn global add emoji-cz
 
-# set as default adapter globally(此方式可不采用，后面我们采用另一种配置方式)
+# set as default adapter globally(全局配置，详细配置见下文)
 echo '{ "path": "emoji-cz" }' > ~/.czrc
 ```
 #### 配置
 
-在项目根目录创建`.cz.json`文件，按照“emoji-cz”官方例子修改内容(本仓库中`.cz.json`文件已按照gitmoji补全，可直接使用)：
-
+按照“emoji-cz”官方例子内容：
 ```
 {
   "path": "emoji-cz",  // 指定cz使用的log工具
@@ -57,6 +56,17 @@ echo '{ "path": "emoji-cz" }' > ~/.czrc
 }
 
 ```
+
+(本仓库中`.cz.json`文件已按照gitmoji补全，可直接使用。
+
+##### 全局配置 
+
+编辑 ~/.czrc文件（内容如`.cz.json`文件）
+##### 项目配置
+
+在项目根目录创建`.cz.json`文件
+
+
 #### 使用
 以后，凡是用到git commit命令，一律改为使用git cz。这时，就会出现选项，用来生成符合格式的 Commit message（commitizen与emoji结合）。如图：
 ```
