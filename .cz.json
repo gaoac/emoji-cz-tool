@@ -14,7 +14,8 @@
         "description": "Removing code or files."
       },
       "Pref": {
-        "emoji": "⚡️"
+        "emoji": "⚡️",
+        "description": "Improving performance."
       },
       "Quickfix": {
         "emoji": "🚑",
