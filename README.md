@@ -34,7 +34,7 @@ echo '{ "path": "emoji-cz" }' > ~/.czrc
 
 emoji-cz 官方例子内容：
 
-```json
+```javascript
 {
   "path": "emoji-cz",  // 指定commitizen使用的adapter（使用该适配器后，无法生成changelog,故若需要自动生成changelog，可以选择选择conventional-changelog）
   "emoji-cz": {
