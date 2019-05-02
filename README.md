@@ -1,18 +1,23 @@
 # emoji-cz-tool
 
-emoji-cz配置文件
+#### 写在前面
 
->关于Git Commit message 的写法规社区有多种，本文采用的的Angular 规范是目前使用最广的写法，比较合理和系统化，并且有配套的工具。
+关于Git，大家想必都很熟悉，因为我们几乎每天都在重复着`git add`、`git commit`、`git push`等命令，自然也就留下很多“痕迹”，如果没有好的规范和工具来约束，可能就会出现以下情况：
+![](https://raw.githubusercontent.com/gaoac/images-library/master/blog/git_commit_error.png)
 
-#### 工具介绍：
+因此，规范和工具的重要性就体现出来了：
 
-*  [commitizen](https://github.com/commitizen/cz-cli)
-*  [gitmoji](https://github.com/carloscuesta/gitmoji/)
-*  [emoji-cz](https://github.com/kevin940726/emoji-cz)
+> 关于 Git Commit message 的写法规社区有多种，本文采用的的 Angular 规范是目前使用最广的写法，比较合理和系统化，并且有配套的工具。
+
+#### 相关工具：
+
+- [commitizen](https://github.com/commitizen/cz-cli)
+- [gitmoji](https://github.com/carloscuesta/gitmoji/)
+- [emoji-cz](https://github.com/kevin940726/emoji-cz)
 
 #### 安装
 
-```
+```bash
 npm install -g commitizen
 # OR
 # yarn global add commitizen
@@ -24,12 +29,14 @@ npm install -g emoji-cz
 # set as default adapter globally(全局配置，详细配置见下文)
 echo '{ "path": "emoji-cz" }' > ~/.czrc
 ```
+
 #### 配置
 
-emoji-cz官方例子内容：
-```
+emoji-cz 官方例子内容：
+
+```json
 {
-  "path": "emoji-cz",  // 指定commitizen使用的adapter
+  "path": "emoji-cz",  // 指定commitizen使用的adapter（使用该适配器后，无法生成changelog,故若需要自动生成changelog，可以选择选择conventional-changelog）
   "emoji-cz": {
       // Overwrite types prompted to the command line.
       "types": {
@@ -57,19 +64,21 @@ emoji-cz官方例子内容：
 
 ```
 
-(本仓库中`.cz.json`文件已按照gitmoji补全，可直接使用)
+(可参考[emoji-cz-tool](https://github.com/gaoac/emoji-cz-tool)仓库中`.cz.json`文件已按照 gitmoji 补全，可直接使用)
 
-##### 全局配置 
+##### 全局配置
 
-编辑 ~/.czrc文件（内容如`.cz.json`文件）
+编辑 ~/.czrc 文件（内容如`.cz.json`文件）
+
 ##### 项目配置
 
 在项目根目录创建`.cz.json`文件
 
-
 #### 使用
-以后，凡是用到git commit命令，一律改为使用git cz。这时，就会出现选项，用来生成符合格式的 Commit message（commitizen与emoji结合）。如图：
-```
+
+以后，凡是用到 git commit 命令，一律改为使用 git cz。这时，就会出现选项，用来生成符合格式的 Commit message（commitizen 与 emoji 结合）。如图：
+
+```bash
 ? Select the type of change that you're committing: (Use arrow keys)
 ❯ ✨  Feat:                   A new feature
   🐛  Fix:                    A bug fix
@@ -79,3 +88,7 @@ emoji-cz官方例子内容：
   🚀  Perf:                   A code change that improves performance
   ✅  Test:                   Adding tests.
 ```
+
+再看提交记录，是不是赏心悦目多了：
+
+![](https://raw.githubusercontent.com/gaoac/images-library/master/blog/git_commit_normal.png)
